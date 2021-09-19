@@ -1,0 +1,354 @@
+.containerHeader {
+  background: #ffffff;
+  position: fixed;
+
+    .header {
+      display: flex;
+      align-items: center;
+      
+      .tel {
+        display: flex;
+        align-items: center;
+        margin: 21px 0 20px 0;
+  
+        .imgSvgTel {
+          max-width: 19px;
+          margin-left: 16px;
+        }
+        
+        p {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+      }
+  
+      .headerDesktop {
+        display: none;
+      }
+  
+      .imgSvgLogo {
+        max-width: 35px;
+        margin-right: 16px;
+      }
+  
+    }
+    .Whastapp {
+      position: fixed;
+      max-width: 25px;
+      bottom: 0px;
+      background: #25d366;
+      border-radius: 50px;
+      margin: 20px;
+      padding: 10px;
+    }
+  
+    .button{
+      background: #1c69d4;
+      color: #ffffff;
+      height: 45px;
+      border: none;
+      max-width: 360px;
+    }
+}
+
+@media (min-width: 361px) {
+  .containerHeader {
+    position: relative;
+    
+    .header{
+
+      .tel {
+        display: none;
+      }
+
+      .headerDesktop {
+        display: flex;
+        flex-direction: column;
+
+        .headerFlex {
+          display: flex;
+          margin-left: 20px;
+
+          a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border: solid 1px;
+            max-width: 150px;
+            margin: 20px;
+            color: #ffffff;
+            font-size: 14px;
+            
+            img {
+              max-width: 19px;
+              fill: #ffffff
+            }
+          }
+          
+          .boxLinkWhastapp {
+            background: #25d366;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+          }
+  
+          .boxLink {
+            background: #000000;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .headerFlexP {
+          display: flex;
+          max-width: 60%;
+          white-space: nowrap;
+          margin-left: 50px;
+
+          a {
+            text-decoration: none;
+            color: #000000;
+          }
+        }
+      }
+      
+      .imgSvgLogo {
+        max-width: 92px;
+        margin: 25px 100px 25px 25px;
+
+      }
+    }
+    .Whastapp {
+      display: none;
+    }
+    .button {
+      display: none;
+    }
+  }
+}
+
+.button{
+  background: #1c69d4;
+  color: #ffffff;
+  height: 45px;
+  border: none;
+  max-width: 360px;
+}
+
+.containerModal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+
+  .btnModal{
+  background: #666666;
+    color: #ffffff;
+    height: 45px;
+    border: none;
+  }
+  .modal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    p{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0;
+      font-size: 20px;
+
+      .carro{
+        max-width: 28px;
+        margin-right: 5px;
+      }
+    }
+
+    .formInput {
+      margin: 10px 0;
+      height: 30px;
+      border: none;
+      
+      input{
+        border: none;
+      }      
+    }
+    .checkbox{
+      display: flex;
+      align-items: center;
+      
+      input {
+        flex: 1;
+        max-width: 20px;
+      }
+      p{
+        flex: 2;
+        white-space: nowrap;
+        font-size: 12px;
+
+        span {
+          font-weight: bold;
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+}
+
+.conteudoCars{
+  color: #262626;
+  padding-top: 100px;
+
+  .BanerMobile {
+    display: flex;
+  }
+  
+  .BannerDesktop {
+    display: none;
+  }
+  
+  @media (min-width: 361px) {
+    .BanerMobile {
+      display: none;
+    }
+
+    .BannerDesktop {
+      display: flex !important;
+      max-width: 100%
+    }
+  }
+
+
+
+  h1{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 361px) {
+  .conteudoCars {
+    padding-top: 0;
+  }
+}
+
+.containerCar {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+  
+  .divCar {
+    max-width: 320px;
+
+    .carsTitle {
+      color: #262626;
+      font-size: 20px;
+    }
+  
+    .btnCars {
+      display: flex;
+  
+      .btnLigar {
+        background: #666666;
+        color: #ffffff;
+        height: 45px;
+        border: none;
+        max-width: 360px;
+        margin-left: 10px;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: #666666;
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+  
+      a {
+        max-width: 24px;
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 361px) {
+  .containerCar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    .car {
+      max-width: 215px;
+    }
+
+  }
+  .btnCars {
+    max-width: 215px;
+    display: flex;
+    align-content: center;
+  }
+  .btnLigar {
+    display: none;
+  }
+}
+
+.containerFooter {
+  background: #e6e6e6;
+  padding-top: 30px;
+  text-align: center;
+  
+  .textFooter{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    
+    .contentPrincipal {
+      border-top: solid 1px #666666;
+      margin: 30px 0;
+    }
+    
+    p {
+      font-size: 10px;
+    }
+
+    .footerBottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .bmwFooter {
+        display: none !important;
+      }
+
+      .logoFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100px;
+        margin: 30px auto;
+        white-space: nowrap;
+      }
+    }
+
+    @media (min-width: 361px) {
+      .footerBottom {
+        display: flex;
+        flex-direction: row;
+
+        .bmwFooter {
+          display: flex !important;
+          max-width: 38px;
+        }        
+      }
+    }
+  }
+}
